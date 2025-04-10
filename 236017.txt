@@ -1,0 +1,47 @@
+4. git init
+// Со оваа команда иницијализираме локален репозиториум
+
+5. git remote add origin https://github.com/andrejpetkovski/SI_2025_lab1_236017.git
+// Со оваа команда се поврзуваме со оддалечениот репозиториум
+
+6. nano README.md
+git add README.md
+git commit -m "Initial commit"
+// Креираме датотека README.md, ја ставаме на stage, па креираме commit
+
+7. git add SI2025Lab1Main.java
+git commit -m "Add starter code"
+// Ја ставаме на stage датотеката SI2025Lab1Main.java, па правиме commit
+
+8. git push -u origin master
+// Синхронизација на гранката master со оддалечениот репозиториум
+
+13. git fetch origin
+// Ги преземаме промените од оддалечениот репозиториум кон локалниот
+
+14. git checkout 1-remove-a-task-by-name
+// Се префрламе на гранката 1-remove-a-task-by-name
+
+16. git commit -am "Implement removeTaskByName"
+// Креираме нов commit
+
+17. git push origin 1-remove-a-task-by-name
+// Ги префрламе промените кон оддалечениот репозиториум
+
+19. git checkout 8-mark-a-task-as-completed-by-name
+git commit -am "Implement markTaskAsCompleteByName"
+git push origin 8-mark-a-task-as-completed-by-name
+git checkout 9-mark-all-tasks-in-a-category-as-completed
+git commit -am "Implement MarkAllTasksInCategoryAsCompleted"
+git push origin 9-mark-all-tasks-in-a-category-as-completed
+// Истите чекори (14. 16. и 17.) ги правиме и за останатите две гранки
+
+20. При спојувањето нема конфликти, а се користи рекурзивната стратегија на спојување.
+
+22. git checkout master
+git pull origin master
+git merge 9-mark-all-tasks-in-a-category-as-completed
+// Се префрламе на master гранката, ги земаме промените што настанале на оддалечениот репозиториум и кон master гранката ја спојуваме третата (преостанатата) гранка. Спојувањето се случува по рекурзивната стратегија на спојување.
+
+23. git push origin master
+// Синхронизација со оддалечениот репозиториум
